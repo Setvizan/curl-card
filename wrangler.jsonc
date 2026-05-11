@@ -1,0 +1,19 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "curl-card",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-05-11",
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"kv_namespaces": [
+		{
+			"binding": "VISIT_COUNTER",
+			"id": "c70416d98291489a88b7379a575310c3" // KV Id - not-sensitive
+		}
+	]
+}
