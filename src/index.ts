@@ -32,7 +32,7 @@ export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
 		const ua = request.headers.get("user-agent") ?? "";
 
-		if (!ua.includes("curl")) {
+		if (!ua.includes("curl") && !ua.includes("PowerShell")) {
 			return Response.redirect("https://nin.ooo", 302);
 		}
 
